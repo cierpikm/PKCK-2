@@ -1,0 +1,376 @@
+document {
+    background: url("img/background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+musicians, genres, languages, distributors {
+    display: none;
+}
+
+authors:first-child::before {
+    content: 'Autorzy: ';
+}
+
+authors {
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    display: block;
+    text-align: center;
+    bottom: 15px;
+    right: 16px;
+}
+
+modificationDate::before {
+    content: "Data modyfikacji: ";
+}
+
+modificationDate {
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    font-size: 10px;
+    line-height: 20px;
+    display: block;
+    margin-left: 50%;
+    text-align: center;
+    font-style: italic;
+}
+
+studentId {
+    font-style: italic;
+    font-size: 15px;
+}
+
+description {
+    color: #7D7455;
+    font-family: 'Droid serif', serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 44px;
+    margin-left: 35%;
+}
+
+catalog {
+    background-color: RGBA(244,244,244,0.72);
+    display: block;
+    margin: 20px;
+    list-style-type: none;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+cd {
+    display: block;
+}
+
+cdMusician {
+    color: #7D7455;
+}
+
+/*print musicians*/
+cdMusician[musicianId="QUEEN"]::before {
+    text-align: center;
+    content: "Queen";
+    width: 100%;
+}
+
+cdMusician[musicianId="CPLAY"]::before {
+    content: "Coldplay";
+    margin-left: auto;
+    margin-right: auto;
+}
+
+cdMusician[musicianId="ARIZONA"]::before {
+    content: "A R I Z O N A";
+}
+
+cdMusician[musicianId="BJOVI"]::before {
+    content: "Bon Jovi";
+}
+
+cdMusician[musicianId="PFLOYD"]::before {
+    content: "Pink Floyd";
+}
+
+cdMusician[musicianId="ACDC"]::before {
+    content: "AC/DC";
+}
+
+cdMusician[musicianId="DPODSIADLO"]::before {
+    content: "Dawid Podsiadło";
+}
+
+cdMusician[musicianId="KORTEZ"]::before {
+    content: "Kortez";
+}
+
+cdMusician[musicianId="PROBLEM"]::before {
+    content: "PRO8L3M";
+}
+
+cdMusician[musicianId="DZAWIALOW"]::before {
+    content: "Daria Zawiałow";
+}
+
+cdMusician[musicianId="PDOMAGALA"]::before {
+    content: "Paweł Domagała";
+}
+
+cdMusician[musicianId="TACO"]::before {
+    content: "Taco Hemingway";
+}
+
+cdMusician[musicianId="KINGS"]::before {
+    content: "Kings of Leon";
+}
+
+cdMusician[musicianId="SLAWOMIR"]::before {
+    content: "Sławomir";
+}
+
+cdMusician[musicianId="WILKI"]::before {
+    content: "Wilki";
+}
+
+cdMusician[musicianId="GITARY"]::before {
+    content: "Elektryczne Gitary";
+}
+
+cdMusician[musicianId="KBEDNAREK"]::before {
+    content: "Kamil Bednarek";
+}
+
+cdMusician[musicianId="STRACHY"]::before {
+    content: "Strachy na Lachy";
+}
+
+title {
+    display: block;
+    font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+    color: #7D7455;
+    text-align: center;
+}
+
+coverImg {
+    border-radius: 8px;
+    float: left;
+    width: 30%;
+    height: auto;
+    margin-right: 20px;
+}
+
+/*display CD cover*/
+coverImg[src="img/the-dark-side-of-the-moon.jpg"] {
+    content: url("img/the-dark-side-of-the-moon.jpg");
+}
+
+coverImg[src="img/the-greatest-hits-i-ii-iii.jpg"] {
+    content: url("img/the-greatest-hits-i-ii-iii.jpg");
+}
+
+coverImg[src="img/a-head-full-of-dreams.jpg"] {
+    content: url("img/a-head-full-of-dreams.jpg");
+}
+
+coverImg[src="img/ghost-stories.jpg"] {
+    content: url("img/ghost-stories.jpg");
+}
+
+coverImg[src="img/parachutes.jpg"] {
+    content: url("img/parachutes.jpg");
+}
+
+coverImg[src="img/x-y.jpg"] {
+    content: url("img/x-y.jpg");
+}
+
+coverImg[src="img/mylo-xyloto.jpg"] {
+    content: url("img/mylo-xyloto.jpg");
+}
+
+coverImg[src="img/gallery.jpg"] {
+    content: url("img/gallery.jpg");
+}
+
+coverImg[src="img/this-house-is-not-for-sale.jpg"] {
+    content: url("img/this-house-is-not-for-sale.jpg");
+}
+
+coverImg[src="img/the-wall.jpg"] {
+    content: url("img/the-wall.jpg");
+}
+
+coverImg[src="img/the-division-bell.jpg"] {
+    content: url("img/the-division-bell.jpg");
+}
+
+coverImg[src="img/black-ice.jpg"] {
+    content: url("img/black-ice.jpg");
+}
+
+coverImg[src="img/podsiadlo.jpg"] {
+    content: url("img/podsiadlo.jpg");
+}
+
+coverImg[src="img/kortez.jpg"] {
+    content: url("img/kortez.jpg");
+}
+
+coverImg[src="img/widmo.jpg"] {
+    content: url("img/widmo.jpg");
+}
+
+coverImg[src="img/helsinki.jpg"] {
+    content: url("img/helsinki.jpg");
+}
+
+coverImg[src="img/1984.jpg"] {
+    content: url("img/widmo.jpg");
+}
+
+coverImg[src="img/1984.jpg"] {
+    content: url("img/widmo.jpg");
+}
+
+coverImg[src="img/walls.jpg"] {
+    content: url("img/walls.jpg");
+}
+
+coverImg[src="img/cafe-belga.jpg"] {
+    content: url("img/cafe-belga.jpg");
+}
+
+coverImg[src="img/the-greatest-hits-b-iext48699064.jpg"] {
+    content: url("img/the-greatest-hits-b-iext48699064.jpg");
+}
+
+coverImg[src="img/wilki.jpg"] {
+    content: url("img/wilki.jpg");
+}
+
+coverImg[src="img/nic-mnie-nie-rusza.jpg"] {
+    content: url("img/nic-mnie-nie-rusza.jpg");
+}
+
+coverImg[src="img/talizman.jpg"] {
+    content: url("img/talizman.jpg");
+}
+
+coverImg[src="img/przechodzien-o-wschodzie.jpg"] {
+    content: url("img/przechodzien-o-wschodzie.jpg");
+}
+
+cdGenre, cdLanguage, premiereDate, numberOfCds, price, cdDistributor {
+    display: list-item;
+    color: #373737;
+}
+
+cdGenre[genreId="ROCK"]::before {
+    content: "Gatunek: rock";
+}
+
+cdGenre[genreId="SROCK"]::before {
+    content: "Gatunek: soft rock";
+}
+
+cdGenre[genreId="AROCK"]::before {
+    content: "Gatunek: rock alternatywny";
+}
+
+cdGenre[genreId="PROCK"]::before {
+    content: "Gatunek: rock progresywny";
+}
+
+cdGenre[genreId="HROCK"]::before {
+    content: "Gatunek: hard rock";
+}
+
+cdGenre[genreId="POP"]::before {
+    content: "Gatunek: pop";
+}
+
+cdGenre[genreId="RAP"]::before {
+    content: "Gatunek: rap";
+}
+
+cdGenre[genreId="DPOLO"]::before {
+    content: "Gatunek: disco polo";
+}
+
+cdGenre[genreId="REG"]::before {
+    content: "Gatunek: reggae";
+}
+
+cdLanguage::before {
+    content: "Język: " attr(languageId);
+}
+
+premiereDate::before {
+    content: "Data premiery: ";
+}
+
+numberOfCds::before {
+    content: "Liczba płyt: ";
+}
+
+price::before {
+    content: "Cena: ";
+}
+
+price::after {
+    content: " " attr(currency);
+}
+
+cdDistributor[distributorId="UMP"]::before {
+    content: "Dystrybutor: Universal Music Polska";
+}
+
+cdDistributor[distributorId="WMP"]::before {
+    content: "Dystrybutor: Warner Music Poland";
+}
+
+cdDistributor[distributorId="AR"]::before {
+    content: "Dystrybutor: Atlantic Records";
+}
+
+cdDistributor[distributorId="SME"]::before {
+    content: "Dystrybutor: Sony Music Entertainment";
+}
+
+cdDistributor[distributorId="FKO"]::before {
+    content: "Dystrybutor: Firma Księgarska Olesiejuk";
+}
+
+cdDistributor[distributorId="AGO"]::before {
+    content: "Dystrybutor: Agora S.A.";
+}
+
+cdDistributor[distributorId="MYS"]::before {
+    content: "Dystrybutor: Mystic Production";
+}
+
+cdDistributor[distributorId="ASF"]::before {
+    content: "Dystrybutor: Asfalt Distro";
+}
+
+cdDistributor[distributorId="EMU"]::before {
+    content: "Dystrybutor: e-Muzyka";
+}
+
+cd {
+    padding: 10px;
+    overflow: auto;
+    font: 18px Verdana;
+}
+
+cd:hover {
+    box-shadow: 0 0 7.5em rgba(100, 100, 100, 0.8);
+    opacity: 1;
+    margin: auto;
+}
