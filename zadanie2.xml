@@ -19,7 +19,7 @@ xsi:schemaLocation="pkck-zad2 zadanie2.xsd">
                 <authorId>2</authorId>
             </author>
         </authors>
-        <modificationDate>2002-09-24</modificationDate>
+        <modificationDate>2019-04-04</modificationDate>
         <description>Katalog płyt CD z muzyką</description>
     </header>
 
