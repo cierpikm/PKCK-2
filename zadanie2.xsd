@@ -3,9 +3,14 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:pkck = "pkck-zad2"
     targetNamespace = "pkck-zad2"
-     elementFormDefault="qualified">
-    <xs:element name = "document" type = "pkck:documentType"/>
-
+    elementFormDefault="qualified">
+    <xs:element name = "document" type = "pkck:documentType">
+        <!-- > unique studentID -->
+        <xs:key name="unikNrStudentID">
+            <xs:selector xpath="authors/author"/>
+            <xs:field xpath="studentID"/>
+        </xs:key>
+    </xs:element>
     <!-- document type -->
     <xs:complexType name = "documentType">
         <xs:sequence>
@@ -47,8 +52,7 @@
     <!-- author type -->
     <xs:complexType name = "authorType">
         <xs:sequence>
-            <xs:element name = "name" type = "xs:string"/>
-            <xs:element name = "surname" type = "xs:string"/>
+            <xs:group ref="pkck:osoba"/>
             <xs:element name = "studentId">
                 <xs:simpleType>
                     <xs:restriction base="xs:integer">
@@ -56,8 +60,16 @@
                     </xs:restriction>
                 </xs:simpleType>
             </xs:element>
+            <xs:element name = "authorId" type = "xs:decimal"/>
         </xs:sequence>
     </xs:complexType>
+
+    <xs:group name = "osoba">
+        <xs:sequence>
+            <xs:element name = "name" type = "xs:string"/>
+            <xs:element name = "surname" type = "xs:string"/>
+        </xs:sequence>
+    </xs:group>
     <!-- musicians type -->
     <xs:complexType name = "musiciansType">
         <xs:sequence>
